@@ -1,0 +1,266 @@
+body{
+    background-color: $bodyBg;
+}
+
+button{
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #fff;
+    background: #65950f;
+    border-radius: 3px;
+    border: none;
+}
+
+
+header {
+    background-image: $backgroundImage;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: 50%;
+	border-radius: 0 0 30% 0;
+    padding: 0 0 150px;
+    .header-wrap {
+        padding-top: 10px;
+        position: relative;
+        max-width: 1200px;
+        width: 80%;
+        margin: 0 14%;
+    }
+    .header_text{
+        max-width: 476px;
+        font-family: map-get($fontFamily,font3);
+        font-size: 14px;
+	    color: $colorlitersHeadHeading;
+	    line-height: 1.5;
+	    margin: 35px 0;
+    }
+}
+
+.header_button{
+    @extend button;
+    @include buttons(absolute);
+ 
+}
+
+.login{
+    @include links(white);
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+.header_heading {
+    font-size: 36px;
+    font-weight: bold;
+    color:$colorlitersHeadHeading;
+    width: 300px;
+    line-height: 1;
+	margin: 40px 0;
+    &::before{
+        content: 'awesome';
+	display: inline-block;
+	width: 144px;
+	height: 33px;
+	background:$backgroundWord;
+	position: absolute;
+	z-index: 1;
+	top: 136px;
+	left: 2px;
+	color: $colorlitersHeadHeading;
+    }
+}
+.section {
+	position: relative;
+	padding: 10px 0 150px 0;
+}
+.section_card_wrap {
+	width: 60%;
+	min-width: 660px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.section_card {
+    text-align: center;
+    height: 45%;
+    width: 100%;
+    max-width: 870px;
+    margin-top: 1%;
+    margin-left: $marginleft;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    background-color:$sectionCardAndFooterBgColor;
+    border-radius: 10px;
+    display: flex;
+    .section_card_img{
+        border-radius: 7%;
+        margin: 1%;
+        width: 300px;
+
+    }
+    .section_card_heading{
+        font-family: map-get($fontFamily,font1);
+        color: $litersColorHeading;
+        font-weight: $fontWeigth;
+
+    }
+    .section_card_text{
+       color:  $litersColor;
+       font-family: map-get($fontFamily,font3);
+       font-size: 11px;
+       text-align: justify;
+       line-height: 1.5;
+    }
+    .section_link{
+        @include links(gray);
+        font-family: map-get($fontFamily,font1);
+    }
+    
+}
+.section_card_right_container {
+    margin-left: 52px;
+    float: left;
+    width: 403px;
+	box-sizing: border-box;
+	color: #c0c3ce;
+	padding: 0 50px;
+	text-align: center;
+}
+
+.section_text{
+    font-family: map-get($fontFamily,font2);
+    color: $colorlitersHeadHeading;
+    text-align: center;
+	font-size: $fontSize;
+    font-weight: bold;
+    position: relative;
+    width: 300px;
+    margin-left: 41%;
+    padding-left: 57px;
+    &::before {
+        content: "adventure";
+        background-color:$backgroundWord;
+        position: absolute;
+        left: 215px;
+        color:  $colorlitersHeadHeading;
+      }
+      
+}
+
+.section_banner {
+	width: 58%;
+	min-width: 700px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -50px;
+	height: 100px;
+	margin: 0 auto;
+	background: $background;
+	border-radius: 5px;
+}
+.section_banner_button{
+    @extend button;
+    @include buttons(absolute);
+    right: 100px;
+	top: 32px;
+}
+.section_banner_heading {
+    color: $colorlitersHeadHeading;
+	font-weight: bold;
+	position: absolute;
+	font-size: $fontSize;
+	margin: 0;
+	top: 20px;
+	left:100px;
+	z-index: 1;
+    &::before{
+        content: '';
+	    display: inline-block;
+	    width: 50px;
+	    height: 40px;
+	    background:$backgroundWord;
+	    position: absolute;
+	    z-index: -1;
+	    bottom: 0;
+	    left: 88px;
+    }
+}
+.section_banner_text{
+    color:  #c0c3ce;
+	position: absolute;
+	margin-top: 35px;
+	top: 20px;
+	left:100px;
+	z-index: 1;
+    
+}
+
+.footer{
+    background-color: $sectionCardAndFooterBgColor;
+	color: #c0c3ce;
+	padding: 78px 44px 95px 37px;
+    
+
+}
+
+
+
+
+.landing-logo {
+
+    img {
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        vertical-align: super;
+        margin: 0;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        color: $colorlitersHeadHeading;
+
+        span{
+            display: block;
+            font-weight: bold;
+            font-size: 9px;
+        }
+        
+    }
+}
+
+.footer_logo {
+    margin-left: 13%;
+    float: left;
+    width: 30%;
+     p{
+        display: inline-block;
+        vertical-align: super;
+        margin: 0;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        color: $litersColor;
+        ;
+        span{
+            display: block;
+            font-weight: bold;
+            font-size: 9px;
+            }
+    }
+}
+
+.footer_text {
+    text-align: justify;
+	float: left;
+	width: 244px;
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+.footer-cr {
+    margin-right: 13%;
+	float: right;
+    font-size: 13px;
+    line-height: 4;
+}

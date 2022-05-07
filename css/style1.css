@@ -1,0 +1,225 @@
+body {
+  background-color: white; }
+
+button, .header_button, .section_banner_button {
+  padding: 10px 30px;
+  font-weight: bold;
+  color: #fff;
+  background: #65950f;
+  border-radius: 3px;
+  border: none; }
+
+header {
+  background-image: url("../img/m-h-day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 0 0 30% 0;
+  padding: 0 0 150px; }
+  header .header-wrap {
+    padding-top: 10px;
+    position: relative;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 14%; }
+  header .header_text {
+    max-width: 476px;
+    font-family: "Fresca", sans-serif;
+    font-size: 14px;
+    color: #110F2F;
+    line-height: 1.5;
+    margin: 35px 0; }
+
+.header_button {
+  position: absolute;
+  background-color: #6CEB4C; }
+
+.login {
+  text-decoration: underline;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 1%;
+  margin-left: 20%; }
+
+.header_heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #110F2F;
+  width: 300px;
+  line-height: 1;
+  margin: 40px 0; }
+  .header_heading::before {
+    content: 'awesome';
+    display: inline-block;
+    width: 144px;
+    height: 33px;
+    background: #14a0c7;
+    position: absolute;
+    z-index: 1;
+    top: 136px;
+    left: 2px;
+    color: #110F2F; }
+
+.section {
+  position: relative;
+  padding: 10px 0 150px 0; }
+
+.section_card_wrap {
+  width: 60%;
+  min-width: 660px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.section_card {
+  text-align: center;
+  height: 45%;
+  width: 100%;
+  max-width: 870px;
+  margin-top: 1%;
+  margin-left: 13%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  background-color: #332E2E;
+  border-radius: 10px;
+  display: flex; }
+  .section_card .section_card_img {
+    border-radius: 7%;
+    margin: 1%;
+    width: 300px; }
+  .section_card .section_card_heading {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: 700; }
+  .section_card .section_card_text {
+    color: #c0c3ce;
+    font-family: "Fresca", sans-serif;
+    font-size: 11px;
+    text-align: justify;
+    line-height: 1.5; }
+  .section_card .section_link {
+    text-decoration: underline;
+    color: gray;
+    font-family: "Source Sans Pro", sans-serif; }
+
+.section_card_right_container {
+  margin-left: 52px;
+  float: left;
+  width: 403px;
+  box-sizing: border-box;
+  color: #c0c3ce;
+  padding: 0 50px;
+  text-align: center; }
+
+.section_text {
+  font-family: "Hind", sans-serif;
+  color: #110F2F;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  width: 300px;
+  margin-left: 41%;
+  padding-left: 57px; }
+  .section_text::before {
+    content: "adventure";
+    background-color: #14a0c7;
+    position: absolute;
+    left: 215px;
+    color: #110F2F; }
+
+.section_banner {
+  width: 58%;
+  min-width: 700px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  height: 100px;
+  margin: 0 auto;
+  background: #444 linear-gradient(to left, #2d5bd9, #65950f);
+  border-radius: 5px; }
+
+.section_banner_button {
+  position: absolute;
+  background-color: #6CEB4C;
+  right: 100px;
+  top: 32px; }
+
+.section_banner_heading {
+  color: #110F2F;
+  font-weight: bold;
+  position: absolute;
+  font-size: 22px;
+  margin: 0;
+  top: 20px;
+  left: 100px;
+  z-index: 1; }
+  .section_banner_heading::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background: #14a0c7;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 88px; }
+
+.section_banner_text {
+  color: #c0c3ce;
+  position: absolute;
+  margin-top: 35px;
+  top: 20px;
+  left: 100px;
+  z-index: 1; }
+
+.footer {
+  background-color: #332E2E;
+  color: #c0c3ce;
+  padding: 78px 44px 95px 37px; }
+
+.landing-logo img {
+  display: inline-block; }
+.landing-logo p {
+  display: inline-block;
+  vertical-align: super;
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #110F2F; }
+  .landing-logo p span {
+    display: block;
+    font-weight: bold;
+    font-size: 9px; }
+
+.footer_logo {
+  margin-left: 13%;
+  float: left;
+  width: 30%; }
+  .footer_logo p {
+    display: inline-block;
+    vertical-align: super;
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #c0c3ce; }
+    .footer_logo p span {
+      display: block;
+      font-weight: bold;
+      font-size: 9px; }
+
+.footer_text {
+  text-align: justify;
+  float: left;
+  width: 244px;
+  line-height: 1.5;
+  font-size: 12px; }
+
+.footer-cr {
+  margin-right: 13%;
+  float: right;
+  font-size: 13px;
+  line-height: 4; }

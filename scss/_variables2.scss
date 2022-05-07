@@ -1,0 +1,24 @@
+$backgroundImage : url("../img/m-h-night.jpg");
+$bodyBg: #2c2f3c;
+$backgroundWord: #E96735;
+$litersColor: #c0c3ce;
+$litersColorHeading: white;
+$colorlitersHeadHeading: white;
+$marginleft:13%;
+$font-family1: 'Source Sans Pro', sans-serif;
+$font-family2: 'Hind', sans-serif;
+$font-family3: 'Fresca', sans-serif;
+
+$fontFamily: (font1: $font-family1, font2:$font-family2, font3:$font-family3);
+$fontSize: 22px;
+$fontWeigth:700;
+$background: #444 linear-gradient(to left, #E96735, #E99835);
+$sectionCardAndFooterBgColor:#49546E;
+@mixin links($color,$decorat:underline){
+    text-decoration: $decorat;
+    color: $color;
+}
+@mixin buttons ($position, $bgcolor:#E99835, ) {
+    position: $position;
+    background-color: $bgcolor;
+}

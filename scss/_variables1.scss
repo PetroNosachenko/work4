@@ -1,0 +1,24 @@
+$backgroundImage : url("../img/m-h-day.jpg");
+$bodyBg: white;
+$backgroundWord: #14a0c7;
+$litersColor: #c0c3ce;
+$litersColorHeading: white;
+$colorlitersHeadHeading:#110F2F;
+$marginleft:13%;
+$font-family1: 'Source Sans Pro', sans-serif;
+$font-family2: 'Hind', sans-serif;
+$font-family3: 'Fresca', sans-serif;
+
+$fontFamily: (font1: $font-family1, font2:$font-family2, font3:$font-family3);
+$fontSize: 22px;
+$fontWeigth:700;
+$background: #444 linear-gradient(to left, #2d5bd9, #65950f);
+$sectionCardAndFooterBgColor :#332E2E;
+@mixin links ($color,$decorat:underline){
+    text-decoration: $decorat;
+    color: $color;
+}
+@mixin buttons ($position, $bgcolor:#6CEB4C) {
+    position: $position;
+    background-color: $bgcolor;
+}
